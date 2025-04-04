@@ -7,6 +7,25 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+body { 
+    .whatsapp-button {
+    position: fixed; /* Agar tetap di posisi saat di-scroll */
+    bottom: 20px;    /* Jarak dari bawah */
+    right: 20px;     /* Jarak dari kanan */
+    z-index: 9999;   /* Agar selalu di atas elemen lain */
+}
+
+.whatsapp-button img {
+    width: 50px;     /* Ubah ukuran sesuai keinginan */
+    height: auto;
+    border-radius: 50%; /* Agar terlihat seperti lingkaran (opsional) */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efek bayangan (opsional) */
+}
+
+.whatsapp-button a {
+    display: block; /* Membuat area klik lebih besar */
+}
+
 
 .container {
     background-color: #fff;
